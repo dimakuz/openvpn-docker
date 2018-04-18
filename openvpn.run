@@ -1,0 +1,5 @@
+#!/bin/sh
+IMAGE=openvpn:latest
+DATA=/home/smizrahi/.openvpn
+docker rm --force openvpn
+docker run -d --privileged --net=host -v $DATA:/config --restart=always --name openvpn $IMAGE
