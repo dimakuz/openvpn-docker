@@ -8,7 +8,7 @@ RUN apk update && \
 
 ADD docker-entrypoint.sh /entrypoint.sh
 
-VOLUME /server
+VOLUME /config
 
 ENTRYPOINT ["/entrypoint.sh"]
 CMD [""]
