@@ -6,6 +6,7 @@ MAINTAINER Saggi Mizrahi "saggi@mizrahi.cc"
 RUN apk update && \
     apk add openvpn
 
+RUN adduser openvpn openvpn
 ADD docker-entrypoint.sh /entrypoint.sh
 
 VOLUME /config
