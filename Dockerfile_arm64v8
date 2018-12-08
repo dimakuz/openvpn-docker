@@ -4,7 +4,7 @@ ENV ARCH arm64v8
 MAINTAINER Saggi Mizrahi "saggi@mizrahi.cc"
 
 RUN apk update && \
-    apk add openvpn
+    apk add openvpn tzdata
 
 RUN adduser openvpn openvpn
 ADD docker-entrypoint.sh /entrypoint.sh
