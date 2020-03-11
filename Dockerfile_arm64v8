@@ -1,4 +1,4 @@
-FROM arm64v8/alpine:3.7
+FROM arm64v8/alpine:3.11
 LABEL image=ficoos/openvpn:arm64v8
 ENV ARCH arm64v8
 MAINTAINER Saggi Mizrahi "saggi@mizrahi.cc"
